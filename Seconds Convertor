@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+
+class secondsConvertor{
+    public:
+    int hr,min,sec;
+   
+    
+    int seconds(){
+       cout<<"Enter the time in hours : minutes : seconds"<<endl;
+    cin>>hr>>min>>sec;
+    
+    cout<<"Entered time is "<<hr<<":"<<min<<":"<<sec<<endl; 
+    
+    int res= hr*3600+min*60+sec;
+    return res;
+    }
+};
+
+    
+    
+
+int main()
+{
+    secondsConvertor sc;
+    
+    int converted=sc.seconds();
+    cout<<"The converted time in seconds is: "<<converted;
+    
+  
+    return 0;
+}
